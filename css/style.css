@@ -1,0 +1,149 @@
+:root{
+    --dark-color:rgba(230, 217, 217, 0.5);
+    --medium-color:black;
+    --light-color: rgba(211, 34, 34, 0.5);
+}
+
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color:var(--light-color);
+    padding: 2rem;
+}
+
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, var(--light-color), var(--dark-color)),url("/img/8QaO.mp4");
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 99% 1%, 100% 85%, 0% 100%);
+}
+
+
+    
+    .text-box{ 
+        position: absolute;
+        top: 40%;
+        color: yellow ;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+}
+
+.heading-primary {
+    text-transform: uppercase;
+
+}
+
+
+.heading-primary-main{
+    display:block;
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+    animation-name: moveleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+
+}
+
+
+
+@keyframes moveleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+        
+    }
+    80%{
+        transform: translateX(20px);
+    
+}
+  100%  {
+           opacity: 1;
+           transform: translateX(0);
+
+           }
+}
+
+
+
+.heading-primary-sub{
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+    animation-name: moveright;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes moveright {
+    0% {   opacity: 0;
+    transform: translateX(-20px);
+ }
+ 
+ 80%{
+     transform: translateX(-20px);
+ }
+ 100%{
+    opacity: 1;
+    transform: translateX
+}
+
+ }
+ 
+ 
+
+
+ 
+a.button25 {
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #fff;
+    outline: none;
+    border: 2px solid #F64C2B;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+    background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+  }
+  a.button25:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+  }
+  
+  img{
+      width: 400px;
+      float: 5px right;
+      margin-right: 7em;
+      margin-bottom: 7rem;
+      margin-top: 2.2rem;
+      top: 30%;
+
+  }
+    
+  a.button25{
+      
+  }
+  
+
+  
+
